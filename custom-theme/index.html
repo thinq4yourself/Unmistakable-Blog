@@ -1,0 +1,2606 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>UNMISTAKABLE BLOG - USER MANUAL</title>	
+    <meta name="description" content="This documentation contains contains tutorials that will make you easier to configure the theme." />
+    <meta name="robots" content="noindex, nofollow">     
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="custom-theme/assets/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="custom-theme/assets/css/main.css">
+    <link rel="stylesheet" href="custom-theme/assets/css/shCoreDefault.css">        
+</head>
+<body data-spy="scroll">
+ 	<header id="top">
+	  	<div class="container-fluid">
+	  		<div class="row">
+				<div class="col-md-3">
+					<a href="http://unmistakable.us" target="_blank">
+						<img src="custom-theme/assets/img/trip-bag.svg" alt="unmistakable.us" class="img-responsive"/>
+					</a>
+				</div>
+				<div class="col-md-9">
+					<h1>Unmistakable - Ghost Theme User Manual</h1>
+					<p>This user manual will teach you how to set up and use the Unmistakable Ghost Theme. Make sure this isn't deployed into production.</p>
+				</div>
+			</div>
+	 	</div>
+ 	</header>
+ 	<div class="container-fluid">
+  		<div class="row">
+   			<div class="col-md-3">
+				<div id="navigation" class="sf-sidebar">
+					<ul class="nav nav-list">    				
+						<li class="active">
+							<a href="#theme-info">1. Theme Info</a>
+							<ul class="nav">
+								<li><a href="#change-logs">1.1 Change Logs</a></li>
+							</ul>
+						</li>					
+						<li>
+							<a href="#install">2. Install</a>
+							<ul class="nav">
+								<li><a href="#install-ghost">2.1 Install Ghost</a></li>
+								<li><a href="#install-theme">2.2 Install Theme</a></li>								
+								<li><a href="#install-demo-data">2.3 Install Demo Data</a></li>
+							</ul>
+						</li>			    	
+						<li>
+							<a href="#getting-to-know-the-theme">3. Getting to know the Theme</a>
+							<ul class="nav">
+								<li><a href="#package-content">3.1 Package Content</a></li>
+								<li><a href="#theme-redefine">3.2 Theme Redefined</a></li>
+								<li>
+									<a href="#theme-widgets">3.3 Theme Widgets</a>
+									<ul class="nav">
+										<li><a href="#navigation-widget">3.3.1 Navigation</a></li>
+										<li><a href="#search-widget">3.3.2 Search</a></li>
+										<li><a href="#tags-widget">3.3.3 Tags</a></li>										
+										<li><a href="#recent-posts-widget">3.3.4 Recent Posts</a></li>
+										<li><a href="#flickr-widget">3.3.5 Flickr</a></li>
+										<li><a href="#dribbble-widget">3.3.6 Dribbble</a></li>
+										<li><a href="#instagram-widget">3.3.7 Instagram</a></li>
+										<li><a href="#social-widget">3.3.8 Social</a></li>
+										<li><a href="#newsletter-widget">3.3.9 Newsletter</a></li>
+										<li><a href="#recent-tweets-widget">3.3.10 Recent Tweets</a></li>
+										<li><a href="#facebook-like-widget">3.3.11 Facebook Like</a></li>
+										<li><a href="#text-widget">3.3.12 Text</a></li>
+										<li><a href="#google-plus-badge-widget">3.3.13 Google Plus Badge</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#setting-up-the-theme">4. Setting up the Theme</a>
+							<ul class="nav">
+								<li><a href="#general-option">4.1 General</a></li>
+								<li><a href="#header-option">4.2 Header</a></li>
+								<li><a href="#banner-option">4.3 Banner</a></li>								
+								<li><a href="#sidebar-option">4.4 Sidebar</a></li>
+								<li><a href="#footer-option">4.5 Footer</a></li>
+								<li><a href="#color-option">4.6 Color</a></li>
+								<li><a href="#social-media-icons-option">4.7 Social Media Icons</a></li>								
+								<li><a href="#typography-option">4.8 Typography</a></li>
+								<li><a href="#comment-option">4.9 Comment</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#writing-posts">5. Writing posts</a>
+							<ul class="nav">
+								<li><a href="#image-post">5.1 Image Post</a></li>
+								<li><a href="#video-post">5.2 Video Post</a></li>
+								<li><a href="#audio-post">5.3 Audio Post</a></li>
+								<li><a href="#plain-text-post">5.4 Plain Text Post</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#pages">6. Pages</a>
+							<ul class="nav">								
+								<li><a href="#contact-template">6.1 Contact Template</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#dynamic-post-page-layout">7. Dynamic Post/Page Layout</a>
+							<ul class="nav">								
+								<li><a href="#both-sidebar-layout">7.1 Both Sidebar Layout</a></li>
+								<li><a href="#left-sidebar-layout">7.2 Left Sidebar Layout</a></li>
+								<li><a href="#right-sidebar-layout">7.3 Right Sidebar Layout</a></li>
+								<li><a href="#full-width-layout">7.4 Full Width Layout</a></li>
+							</ul>
+						</li>						
+						<li>
+							<a href="#update">8. Update</a>
+						</li>
+						<li>
+							<a href="#credits">9. Credits</a>
+							<ul class="nav">								
+								<li><a href="#javascript">9.1 JavaScript</a></li>
+								<li><a href="#images">9.3 Images</a></li>
+								<li><a href="#fonts">9.4 Fonts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+   			</div>
+   			<div class="col-md-9">
+				<div id="content">
+					<div class="alert alert-danger hide hidden">
+						<br/>
+						<h4>Thank you very much for purchasing our item.</h4>
+						<br/>												
+						<p>
+							This user manual will teach you how to set up and use the Unmistakable Ghost theme. In case you have any questions
+that are beyond the scope of the user manual, please send us a message <a href="http://themeforest.net/user/sunflowertheme"  target="_blank"><strong>via profile page here</strong></a>.
+						</p>
+						<p>
+							Remember, you did not only buy this theme but you also bought our support, we are here to help so drop us a line if you need assistance.
+						</p>
+						<p>
+							<strong>Well Done!</strong> If you like our work, please rate it. If you rate it with less than 5 stars, please let me know the reason first and I will do my best to improve the item.
+						</p>
+						<br/>
+						<p><strong>THANKS SO MUCH!</strong></p>
+						<br/>
+					</div>   				
+					<br/>
+					<br/>				
+					<h2 id="theme-info">1. Theme Info</h2>
+					<div style="padding-left:30px;">
+						<p>
+							Theme Name: <strong><em>Unmistakable</em></strong>
+						</p>				
+						<p>
+							Version number: <strong><em>1.0.0</em></strong>
+						</p>
+						<p>
+							Date of release: <strong><em>03/17/2015</em></strong>
+						</p>		
+					</div>					
+					<br/>		
+					<div style="padding-left:30px;">
+					<h4 id="change-logs">1.1 Change Logs</h4>
+					<pre>
+03/17/2015 v1.0.0
+	==> Initial Release 1.0.0
+					</pre>
+					</div>
+					<br/>
+					<br/>
+					<h2 id="install">2. Install</h2>
+					<div style="padding-left:30px;">
+						<h3 id="install-ghost">2.1 Install Ghost</h3>
+						<p>
+							If you need help installing Ghost, follow the instructions in <a href="http://support.ghost.org/installation/" target="_blank">here</a>
+						</p>
+						<br/>
+						<h4 id="install-theme">2.2 Install Theme</h4>
+						<p>
+							If you’ve downloaded whole theme package, unzip it. There you will find the theme installation file , user manual, dummy content .json file, license folder, etc.
+						</p>
+						<div style="padding-left:30px;">
+							<p>
+								<strong>2.2.1 Select Style:</strong>
+							</p>
+							<p>
+								When you are ready to install a theme, you must first upload the theme files and then activate the theme. For this purpose, unzip the file that you downloaded from ThemeForest and there you would find the theme file and upload it.
+							</p>
+							<ul>
+								<li>Default Style: go to folder <strong>theme/unmistakable</strong></li>
+								<li>Redefine style 1 (demo 1): go to folder <strong>theme/redefined/style1/</strong></li>
+								<li>Redefine style 2 (demo 2): go to folder <strong>theme/redefined/style2/</strong></li>
+								<li>Redefine style 3 (demo 3): go to folder <strong>theme/redefined/style3/</strong></li>
+								<li>Redefine style 4 (demo 4): go to folder <strong>theme/redefined/style4/</strong></li>
+								<li>Redefine style 5 (demo 5): go to folder <strong>theme/redefined/style5/</strong></li>
+								<li>Redefine style 6 (demo 6): go to folder <strong>theme/redefined/style6/</strong></li>						
+							</ul>
+							<p>
+								<strong>2.2.2 Install Theme:</strong>
+							</p>							
+							<div style="padding-left:30px">
+								<p>
+									<strong>A. Intall for Ghost Hosted</strong>
+									<ol>										
+										<li>
+											<p>Sign in on ghost.org and go to <strong>Blog Settings</strong></p>
+											<p>
+												<img class="img-responsive"  src="custom-theme/assets/img/hosted-install-01.png" alt="Blog Settings"/>
+											</p>	
+										</li>
+										<li>
+											<p>Upload unmistakable.zip file in theme style folder that you selected from 2.2.1 to your hosted control panel.</p>
+											<p>
+												<img class="img-responsive"  src="custom-theme/assets/img/hosted-install-02.png" alt="Upload Theme"/>
+											</p>
+										</li>
+									</ol>
+								</p>
+								<p>
+									<strong>B. Install for Other Host</strong>
+									<ol>
+										<li>
+											<p>
+												Upload the <strong>unmistakable</strong> folder in theme style folder that you selected from 2.2.1 to <strong>content/themes/</strong> on ghost hosting folder.
+											</p>											
+										</li>
+										<li>							
+											<p>
+												Restart the service of ghost.
+											</p>
+										</li>
+										<li>
+											<p>
+												Login to your Ghost <strong><em>Admin Dashboard > SETTINGS</em></strong>. Select Unmistakable in the 'Theme' options dropdown, save it and you are set up with the theme now. Enjoy!
+											</p>
+											<p>
+												<img class="img-responsive"  src="custom-theme/assets/img/select-theme.png" alt="Select Theme"/>
+											</p>
+										</li>
+									</ol>
+								</p>
+							</div>
+						</div>
+						<br/>
+						<h3 id="install-demo-data">2.2 Install Demo Data</h3>					
+						<p>There is a JSONd file with demo data. This allows you to quickly set up the theme features.</p>
+						<ol>
+							<li>
+								<p>Go to <strong><em>Admin Dashboard > SETTINGS > Labs</em></strong></p>								
+							</li>						
+							<li>
+								<p>Choose the demo style that you want and click <strong>IMPORT</strong> button</p>
+								<p>
+									<img class="img-responsive" src="custom-theme/assets/img/import-demo-content.png" alt="Import Demo"/>
+								</p>
+							</li>						
+							<li>
+								<p>Now the installer will process and import all content to the Unmistakable site.</p>
+							</li>
+						</ol>
+						<p><strong>NOTE: The install process will take up to 5 minutes depending on the server, start it & go grab a cup of tea! Do not leave this page until you have confirmation of the system.</strong></p>
+					</div>	
+					<br/>
+					<br/>
+					<h2 id="getting-to-know-the-theme">3. Getting to know the Theme</h2>
+					<div style="padding-left:30px;">
+						<h3 id="package-content">3.1 Package Content</h3>					
+						<p>Upon downloading the package zip file from ThemeForest, you'll have all files you need inside. Zip package contains the following files and folders:</p>
+						<p><img class="img-responsive" src="custom-theme/assets/img/package-content.png" alt="Package Content"/></p>
+						<ol>
+							<li>
+								<p>
+									<strong>Documentation</strong> folder
+								</p>
+							</li>								
+							<li>
+								<p>
+									<strong>Sample Content</strong> folder contains JSON Demo Contents such as pages and posts and Menu import file.
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Theme</strong> folder contains unmistakable.zip and all re-define styles ready for installation.
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>changelogs.txt</strong> file
+								</p>
+							</li>
+						</ol>												
+						<br/>
+						<h3 id="theme-redefine">3.2 Theme Re-Define</h3>
+						<p>
+							Re-Define Style allows you to quickly set up the Unmistakable theme features. This is base on default theme, we just custom some variable in theme file.
+						</p>
+						<div style="padding-left: 30px;">
+							<h4>3.2.1 Re-Define Style1</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style1
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style1.sunflowertheme.com" target="_blank">http://marquis-style1.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style1.jpg" alt="Home Style 1"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>3 Columns</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Center</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Transparent</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>None</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Explain</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Light</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+							<h4>3.2.2 Re-Define Style2</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style2
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style2.sunflowertheme.com" target="_blank">http://marquis-style2.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style2.jpg" alt="Home Style 2"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>2 Columns - Right Sidebar</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Right</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Light</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>Dashed</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Explain</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Dark</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+							<h4>3.2.3 Re-Define Style3</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style3
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style3.sunflowertheme.com" target="_blank">http://marquis-style3.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style3.jpg" alt="Home Style 3"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>2 Columns - Left Sidebar</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Left</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Dark</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>Solid</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Popup</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Dark</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+							<h4>3.2.4 Re-Define Style4</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style4
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style4.sunflowertheme.com" target="_blank">http://marquis-style4.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style4.jpg" alt="Home Style 4"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>1 Column</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Center</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Light</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>Dashed</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Explain</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Light</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+							<h4>3.2.5 Re-Define Style5</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style5
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style5.sunflowertheme.com" target="_blank">http://marquis-style5.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style5.jpg" alt="Home Style 5"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>2 Columns</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Right</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Main-Color</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>Solid</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Explain</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Dark</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+							<h4>3.2.1 Re-Define Style6</h4>
+							<p>
+								<strong>Location:</strong> theme/redefined/style6
+							</p>
+							<p style="display:none;">
+								<strong>Demo URL:</strong> <a href="http://marquis-style6.sunflowertheme.com" target="_blank">http://marquis-style6.sunflowertheme.com</a>
+							</p>
+							<div class="row">
+								<div class="col-md-6">
+									<img class="img-responsive" src="custom-theme/assets/img/home-style6.jpg" alt="Home Style 6"/>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Options Mixing:</strong></p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Option Value</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">Site Layout</th>
+											  <td>1 Column</td>
+											</tr>
+											<tr>
+											  <th scope="row">Top Bar</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Style</th>
+											  <td>Center</td>
+											</tr>
+											<tr>
+											  <th scope="row">Header Color</th>
+											  <td>Light</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Sticky Header</th>
+											  <td>True</td>
+											</tr>									
+											<tr>
+											  <th scope="row">Full Height Banner</th>
+											  <td>False</td>
+											</tr>
+											<tr>
+											  <th scope="row">Parallax</th>
+											  <td>True</td>
+											</tr>
+											<tr>
+											  <th scope="row">Border Pattern</th>
+											  <td>Dashed</td>
+											</tr>
+											<tr>
+											  <th scope="row">Cover Preview</th>
+											  <td>Explain</td>
+											</tr>
+											<tr>
+											  <th scope="row">Footer Color</th>
+											  <td>Light</td>
+											</tr>																		
+										  </tbody>
+										</table>
+									</div>
+								</div>								
+							</div>
+							<hr/>
+						</div>						
+						<h3 id="theme-widgets">3.3 Theme Widgets</h3>	
+						<p>
+							Unmistakable allows you include any widget to sidebar and footer.
+						</p>
+						<p><strong>How to use widgets:</strong></p>
+						<ol>
+							<li>Open file partials/sidebar/default.hbs or partials/sidebar/left.hbs or partials/footer/default.hbs</li>
+							<li>
+								You will see the code like this:
+								<pre class="brush: js; ruler: true; first-line: 2; highlight:[2,3]">
+									{{>widget/about}}
+									{{>widget/recent-posts widget_title="Recent Posts" display="10" show_desc="false" show_pubdate="true"}}</pre>
+								<p>
+									+ Each line is one widget include
+									<br>
+									+ Add widget: <strong>{{>widget/<span style="color:red;">widget_name</span> <em>widget_options ...</em>}}</strong>. Example: {{>widget/recent-posts widget_title="Recent Posts" display="10" show_desc="false" show_pubdate="true"}}
+									<br/>
+									+ Remove widget: just remove line that include widget.
+								</p>
+							</li>
+							<li>Save file and re-upload it to the server.</li>
+						</ol>
+						<p><strong>Available Widgets</strong></p>
+						<div style="padding-left:30px;">
+							<h3 id="navigation-widget">3.3.1 Navigation</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display the site Navigation
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Navigation</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>										
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/navigation widget_title="Navigation"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/navigation-widget.png" alt="Navigation Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="search-widget">3.3.2 Search</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display search form
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>										
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/search widget_title="Search"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/search-widget.png" alt="Search Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="tags-widget">3.3.3 Tags</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display Tags as List Or Cloud
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Tags</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>
+											<tr>
+											  <th scope="row">style</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option for style of this widget. Change it to <strong>stack</strong> or <strong>cloud</strong></td>
+											</tr>
+											<tr>
+											  <th scope="row">max_items</th>
+											  <td>Number</td>
+											  <td>NO</td>
+											  <td>Option for how many tag to display</td>
+											</tr>
+											<tr>
+											  <th scope="row">show_count</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option for display number post under tag. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>											
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/tags widget_title="Tags" style="stack" max_items="10" show_count="true"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/tags-widget.png" alt="Tags Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="recent-posts-widget">3.3.4 Recent Posts</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display Recent Posts List
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Recent Posts</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>
+											<tr>
+											  <th scope="row">display</th>
+											  <td>Number</td>
+											  <td>NO</td>
+											  <td>Option for how many post to display</td>
+											</tr>
+											<tr>
+											  <th scope="row">show_desc</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option for display post description. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>		
+											<tr>
+											  <th scope="row">show_pubdate</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option to display post publish date. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>									
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/recent-posts widget_title="Recent Posts" display="10" show_desc="false" show_pubdate="true"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/recent-posts-widget.png" alt="Recent Posts Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="flickr-widget">3.3.5 Flickr</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display A Flickr Photo Stream
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Flickr Stream</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>
+											<tr>
+											  <th scope="row">user_id</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Flickr user id that you need to get photo</td>
+											</tr>
+											<tr>
+											  <th scope="row">display</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many photo to display</td>
+											</tr>
+											<tr>
+											  <th scope="row">cols</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many columns to display</td>
+											</tr>						
+											<tr>
+											  <th scope="row">popup_preview</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option to use popup for preview photo. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>							
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/flickr widget_title="Flickr Stream" user_id="36587311@N08" display="10" cols="5" popup_preview="true"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/flickr-widget.png" alt="Flickr Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="dribbble-widget">3.3.6 Dribbble</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display A Dribbble Photo Stream
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Dribbble Stream</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>
+											<tr>
+											  <th scope="row">user_name</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Dribbble user name that you need to get photo</td>
+											</tr>
+											<tr>
+											  <th scope="row">display</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many photo to display</td>
+											</tr>
+											<tr>
+											  <th scope="row">cols</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many columns to display</td>
+											</tr>				
+											<tr>
+											  <th scope="row">show_follow_box</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option to display Dribbble follow buton. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>									
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/dribbble widget_title="Dribbble Stream" user_name="dekkerslade" display="12" cols="3" show_follow_box="true"}}	
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/dribbble-widget.png" alt="Dribbble Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="instagram-widget">3.3.7 Instagram</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display A Instagram Photo Stream
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>
+											<tr>
+											  <th scope="row">user_name</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Instagram user name that you need to get photo</td>
+											</tr>
+											<tr>
+											  <th scope="row">api_token</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Instagram API Token</td>
+											</tr>
+											<tr>
+											  <th scope="row">api_clientid</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Instagram API Client ID</td>
+											</tr>
+											<tr>
+											  <th scope="row">display</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many photo to display</td>
+											</tr>
+											<tr>
+											  <th scope="row">cols</th>
+											  <td>Number</td>
+											  <td>YES</td>
+											  <td>Option for how many columns to display</td>
+											</tr>	
+											<tr>
+											  <th scope="row">show_follow_box</th>
+											  <td>Boolean</td>
+											  <td>NO</td>
+											  <td>Option to display Instagram follow buton. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>													
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/instagram widget_title="Instagram Stream" user_name="dekkerslade" api_token="518686459.9d1fadd.b2bb7107f2a745a78c991ddec9f0b161" api_clientid="9d1fadd22dc942e5a7c75f409fac0cc0" display="12" cols="3" show_follow_box="true"}}	
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/instagram-widget.png" alt="Instagram Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="social-widget">3.3.8 Social</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display A Social Media Icons
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Stay Connected</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>																						
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/social widget_title="Stay Connected"}}	
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/social-widget.png" alt="Social Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="newsletter-widget">3.3.9 Newsletter</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display MailChimp Newsletter box allows user subscribe
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>	
+											<tr>
+											  <th scope="row">desc</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option for form description text</td>
+											</tr>
+											<tr>
+											  <th scope="row">form_url</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>Option for mailchimp form url</td>
+											</tr>																						
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/newsletter widget_title="Newsletter" desc="Enter your email address and get all latest content delivered to your inbox a few times a month." form_url="http://sunflowertheme.us5.list-manage.com/subscribe/post?u=7e0a4b0ce5fd160742dc568d3&amp;id=cc1306b53a"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/newsletter-widget.png" alt="Newsletter Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="recent-tweets-widget">3.3.10 Recent Tweets</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display Recent Tweets Box
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>	
+											<tr>
+											  <th scope="row">twitter_user_url</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The twitter user url</td>
+											</tr>												
+											<tr>
+											  <th scope="row">tweet_widget_id</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The twitter widget id</td>
+											</tr>																						
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/recent-tweets widget_title="Recent Tweets" twitter_user_url="https://twitter.com/SunflowerTheme" twitter_widget_id="409933315160829952"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/recent-tweets-widget.png" alt="Recent Tweets Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="facebook-like-widget">3.3.11 Facebook Like</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display Facebook Like Box
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>	
+											<tr>
+											  <th scope="row">fanpage_url</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Facebook Fan Page url</td>
+											</tr>												
+											<tr>
+											  <th scope="row">show_faces</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option to show faces. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>
+											<tr>
+											  <th scope="row">show_header</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option to show header. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>	
+											<tr>
+											  <th scope="row">show_stream</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option to show stream. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>
+											<tr>
+											  <th scope="row">show_border</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Option to show border. Change it to <strong>true</strong> or <strong>false</strong></td>
+											</tr>																						
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/facebook-like widget_title="Like Us" fanpage_url="https://www.facebook.com/sunflower.theme" show_faces="true" show_header="true" show_stream="false" show_border="false"}}	
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/facebook-like-widget.png" alt="Facebook Like Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="text-widget">3.3.12 Text</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display custom Html Text
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>	
+											<tr>
+											  <th scope="row">text_content</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The html text content</td>
+											</tr>																					
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{>widget/text widget_title="Text Widget" text_content="&lt;p&gt;Put any text here, &lt;strong&gt;html tags&lt;/strong&gt; also support&lt;/p&gt;Cred listicle trust fund 8-bit Blue Bottle, tousled flannel pickled Neutra hoodie High Life. Meggings Pinterest master cleanse, fanny pack aesthetic small batch gluten-free try-hard pop-up Williamsburg. Meggings aesthetic pour-over mlkshk DIY. Sustainable paleo freegan, listicle normcore drinking vinegar crucifix mlkshk quinoa Echo Park scenester Helvetica."}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/text-widget.png" alt="Text Widget"/>
+								</div>
+							</div>
+							<hr/>
+							<h3 id="google-plus-badge-widget">3.3.13 Google Plus Badge</h3>												
+							<div class="row">
+								<div class="col-md-9">
+									<p>
+										Display A Google Plus Badge
+									</p>
+									<p>
+										<strong>Options:</strong>
+									</p>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										  <thead>
+											<tr>
+											  <th>Option Name</th>
+											  <th>Value Type</th>
+											  <th>Require</th>
+											  <th>Description</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <th scope="row">widget_title</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>Title text for this widget, example: Search</td>
+											</tr>
+											<tr>
+											  <th scope="row">custom_class</th>
+											  <td>Text</td>
+											  <td>NO</td>
+											  <td>The custom class for this widget</td>
+											</tr>	
+											<tr>
+											  <th scope="row">gpage_url</th>
+											  <td>Text</td>
+											  <td>YES</td>
+											  <td>The Google Plus Url</td>
+											</tr>																					
+										  </tbody>
+										</table>
+									</div>
+									<p>
+										<strong>Use this widget by code:</strong> {{!>widget/google-plus-badge gpage_url="https://plus.google.com/115618351539604391074" custom_class="full-box"}}
+									</p>
+								</div>
+								<div class="col-md-3">
+									<img class="img-responsive" src="custom-theme/assets/img/google-plus-badge-widget.png" alt="google-plus-badge Widget"/>
+								</div>
+							</div>
+							<hr/>
+						</div>																		
+					</div>	
+					<br/>
+					<br/>		    
+					<h2 id="setting-up-the-theme">4. Setting Up The Theme</h2>
+					<div style="padding-left:30px;">	
+						<p>
+							You can set the Unmistakable theme of change some variable in theme file.
+						</p>
+						<p>
+							After you're done, re-upload file changes to the server.
+						</p>						
+						<h3 id="general-option">4.1 General</h3>
+						<div style="padding-left:30px;">
+							<h4>4.1.1 Turn on / Turn Off Parallax Scroll</h4>						
+							<p>Unmistakable supports Smooth Parallax Scroll, please follow the steps below to change it for the site</p>
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 22 you will see a text line this: <strong>data-parallax="<span style="color:red;">true</span>"</strong>. You can change it to <strong>data-parallax="<span style="color:red;">false</span>"</strong> and vice versa.
+									</p>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.1.2 Border Pattern</h4>
+							<p>
+								Unmistakable supports 3 Border Pattern Modes, it's apply border style for Header, Banner, Post Content, Widget and Footer area. Please follow the steps below to change it for the site.
+							</p>
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 31 you will see a text line this: <strong>data-border-pattern="<span style="color:red;">dashed</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-border-pattern="<span style="color:red;">dashed</span>"</strong> for Dashed pattern.</li>
+										<li><strong>data-border-pattern="<span style="color:red;">solid</span>"</strong> for Solid pattern.</li>
+										<li><strong>data-border-pattern="<span style="color:red;">none</span>"</strong>  for plain pattern.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.1.3 Top Bar</h4>
+							<p>
+								Top Bar display News ticker, and social media. Please follow the steps below to Turn On/Turn Off it for the site</p>
+							</p>
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 23 you will see a text line this: <strong>data-show-top-bar="<span style="color:red;">false</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-show-top-bar="<span style="color:red;">true</span>"</strong> to Turn On Top Bar</li>
+										<li><strong>data-show-top-bar="<span style="color:red;">false</span>"</strong> to Turn Off Top Bar.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.1.4 Cover Preview Mode</h4>
+							<p>
+								Unmistakable supports 2 mode for preview post cover: Pop-Up and Explain. Please follow the steps below to change it for the site</p>
+							</p>
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 32 you will see a text line this: <strong>data-cover-preview-by="<span style="color:red;">explain</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-cover-preview-by="<span style="color:red;">popup</span>"</strong> to use Pop-Up mode.</li>
+										<li><strong>data-cover-preview-by="<span style="color:red;">explain</span>"</strong> to use explain mode.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+						</div>
+						<h3 id="header-option">4.2 Header</h3>
+						<div style="padding-left: 30px;">
+							<h4>4.2.1 Header Style</h4>
+							<p><strong>Unmistakable</strong> supports 3 header layout: Left, Right and Center Layout. Please follow the steps below to change it for the site</p>								
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 24 you will see a text line this: <strong>data-header-layout="<span style="color:red;">center</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-header-layout="<span style="color:red;">left</span>"</strong> for Left Layout</li>
+										<li><strong>data-header-layout="<span style="color:red;">right</span>"</strong> for Right Layout</li>
+										<li><strong>data-header-layout="<span style="color:red;">center</span>"</strong> for Center Layout.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.2.2 Header Sticky</h4>
+							<p><strong>Unmistakable</strong> supports sticky header. Please follow the steps below to change it for the site</p>								
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 25 you will see a text line this: <strong>data-header-sticky="<span style="color:red;">false</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-header-sticky="<span style="color:red;">true</span>"</strong> to enable</li>
+										<li><strong>data-header-sticky="<span style="color:red;">false</span>"</strong> to disable.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.2.3 Header Color</h4>
+							<p><strong>Unmistakable</strong> supports 4 header color modes: Light, Dark, Main Color and Transparent. Please follow the steps below to change it for the site</p>								
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 26 you will see a text line this: <strong>data-header-color="<span style="color:red;">transparent</span>"</strong>. You can change it to:
+									</p>
+									<ul>
+										<li><strong>data-header-color="<span style="color:red;">light</span>"</strong> for Light Color Mode</li>
+										<li><strong>data-header-color="<span style="color:red;">dark</span>"</strong> for Dark Color Mode</li>
+										<li><strong>data-header-color="<span style="color:red;">main-color</span>"</strong> for Main Color Mode</li>
+										<li><strong>data-header-color="<span style="color:red;">transparent</span>"</strong> for Transparent Color Mode.</li>
+									</ul>
+								</li>
+							</ol>	
+							<hr/>
+							<h4>4.2.4 Navigation</h4>
+							<p>
+								<strong>Unmistakable</strong> supportss Ghost built-in Navigation also custom Navigation so you can easily to custom it.
+							</p>
+							<p>
+								To custom navigation use Ghost built-in please go to <strong>Admin Dashboard -> Settings -> Navigation</strong>. And follow this screen to custom it.
+							</p>
+							<p>
+								<img src="http://blog.ghost.org/content/images/2015/03/nav-admin.gif" alt="Custom Navigation"/>
+							</p>
+							<p>
+								<strong>NOTE: With Ghost built-in Navigation you can also use only one level. If you need to use 3 navigation level please follow the steps below.</strong>
+							</p>
+							<ol>
+								<li>
+									<strong>Step 1: Remove all Ghost built-in navigation</strong>
+									<p>
+										<img class="img-responsive"  src="custom-theme/assets/img/remove-navigation.png" alt=""/>
+									</p>
+								</li>
+								<li>
+									<strong>Step 2: Create a Static Page</strong>
+									<p>
+										<img class="img-responsive" src="custom-theme/assets/img/set-static-page.png" alt=""/>
+									</p>
+								</li>
+								<li>
+									<strong>Step 3: Intergate to Navigation</strong>
+									<p>Open File: <strong><em>partials/misc/menu-items.hbs</em></strong> and follow the instruction below</p>
+									<pre class="brush: js; ruler: true; first-line: 72; highlight:[81,82,83,94,95,96,107,108,109]">
+										&lt;li class="active"&gt;
+											&lt;a href="{{@blog.url}}"&gt; &lt;!--Keep href="{{@blog.url}}" for home page--&gt;
+												Home &lt;!--Change text of menu here--&gt;
+											&lt;/a&gt;
+										&lt;/li&gt;
+										{{!End Menu Item}}
+
+										{{!Begin Menu Item}}
+										&lt;li&gt;
+											&lt;a href="{{@blog.url}}/about/"&gt; &lt;!--Change href: {{@blog.url}}/POST_URL_FROM_STEP_2/  Example: {{@blog.url}}/about/--&gt;
+												About &lt;!--Change text of menu here--&gt;
+											&lt;/a&gt;
+										&lt;/li&gt;
+										{{!End Menu Item}}
+
+										{{!Begin Menu Item}}
+										&lt;li&gt;
+											&lt;a href="{{@blog.url}}/resume/"&gt; &lt;!--Change href: {{@blog.url}}/POST_URL_FROM_STEP_2/  Example: {{@blog.url}}/resume/--&gt;
+												Resume &lt;!--Change text of menu here--&gt;
+											&lt;/a&gt;
+										&lt;/li&gt;
+										{{!End Menu Item}}
+
+										{{!Begin Menu Item}}
+										&lt;li&gt;
+											&lt;a href="{{@blog.url}}/contact/"&gt; &lt;!--Change href: {{@blog.url}}/POST_URL_FROM_STEP_2/  Example: {{@blog.url}}/contact/--&gt;
+												Contact &lt;!--Change text of menu here--&gt;
+											&lt;/a&gt;
+										&lt;/li&gt;
+										{{!End Menu Item}}
+										{{!Create the next Menu Item}}</pre>						
+								</li>
+							</ol>
+						</div>						
+						<h3 id="banner-option">4.3 Banner</h3>
+						<div style="padding-left:30px">
+							<h4>4.3.1 On/Off Full Screen Banner</h4>
+							<p><strong>Unmistakable</strong> supports 2 banner style: Standard and Full Screen Banner. Please follow the steps below to change it for the site</p>								
+							<ol>
+								<li>
+									<p>
+										Open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 27 you will see a text line this: <strong>data-full-height-banner="<span style="color:red;">false</span>"</strong>. You can change it to <strong>data-full-height-banner="<span style="color:red;">true</span>"</strong> to enable full screen banner style OR <strong>data-full-height-banner="<span style="color:red;">false</span>"</strong> to disable full screen banner style.
+									</p>
+								</li>
+							</ol>	
+							<hr/>
+						</div>
+						<h3 id="sidebar-option">4.4 Sidebar</h3>
+						<p>
+							In this section you can turn on / turn off any widget that uses on Sidebar
+						</p>
+						<p><strong><em>File: partials/sidebar/default.hbs</em></strong></p>
+						<pre class="brush: js; ruler: true; first-line: 2; highlight:[2,3,4,5]">
+							{{>widget/search}}                                   
+							{{>widget/tags}}
+							{{>widget/recent-posts}}                     									
+							{{>widget/social}}</pre>
+						<p>
+							+ Each line is one widget include
+							<br>
+							+ Add widget: <strong>{{>widget/<span style="color:red;">widget_name</span> widget_options ...}}</strong>
+							<br/>
+							+ Remove widget: just remove line that include widget.
+						</p>
+						<br/>
+						<h3 id="footer-option">4.5 Footer</h3>
+						<p>
+							<strong>Unmistakable</strong> supports 3 columns widget for footer.
+						</p>
+						<p>
+							In this section you can turn on / turn off any widget that uses on Footer
+						</p>
+						<p><strong><em>File: partials/footer/default.hbs</em></strong></p>
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[6,9,12]">
+							&lt;div class="footer"&gt;
+								&lt;div class="widget-area"&gt;
+									&lt;div class="widget-area-wrap"&gt;
+										&lt;div class="row"&gt;
+											&lt;div class="col-md-4"&gt;					
+												{{>widget/about}} <!-- Change widget for column #1 here-->
+											&lt;/div&gt;
+											&lt;div class="col-md-4"&gt;										
+												{{>widget/newsletter}}  <!-- Change widget for column #2 here-->
+											&lt;/div&gt;
+											&lt;div class="col-md-4"&gt;
+												{{>widget/flickr}}  <!-- Change widget for column #3 here-->
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								..............
+							&lt;/div&gt;</pre>														
+						<br/>
+						<h3 id="color-option">4.6 Color</h3>
+						<p>
+							<strong>Unmistakable</strong> includes 24 redefined colors, if you would like to change the color for the theme please follow the steps below.
+						</p>
+						<h4>4.6.1 Using LESS</h4>
+						<div style="padding-left:30px;">
+							<ol>
+								<li>
+									<p>
+										Open file <strong>assets/less/variables.less</strong>
+									</p>
+									<p>
+										On line 17 change value for @main-color to color name that you want.
+									</p>
+									<pre class="brush: js; ruler: true; first-line: 13; highlight:[17]">
+									/* Main Color Options */
+									@main-background:						#DADFE1;
+									@main-background-dark:					#0F0F0F;
+
+									@main-color: 							@default;
+									@content-color: 						#20252B;
+									@gray-color: 							#E2E7EA;
+									@light-color:							#ffffff;
+									</pre>								
+								</li>
+								<li>
+									<p>
+										Rebuild all assets file by command <strong>grunt</strong>.
+									</p>
+									<p>
+										<em>TIP: See more redefine colors in file color.less. You can also apply the custom color to @main-color by other color code</em>
+									</p>
+								</li>
+							</ol>
+						</div>
+						<br/>
+						<h4>4.6.2 Using Standard CSS file</h4>
+						<div style="padding-left:30px;">
+							<ol>
+								<li>
+									<p>
+										open file <strong>default.hbs</strong>
+									</p>
+								</li>
+								<li>
+									<p>
+										On line 17, you will see it like:
+									</p>
+									<pre class="brush: js; ruler: true; first-line: 17; highlight:[17]">
+										&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" /&gt;</pre>
+									<p>
+										Add a line code after this line like this:
+									</p>
+									<pre class="brush: js; ruler: true; first-line: 17; highlight:[18]">
+										&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" /&gt;
+										&lt;link rel="stylesheet" type="text/css" href="{{asset "css/colors/default.css"}}" /&gt;</pre>
+									<p>
+										Take a note of the text <strong>css/colors/<span style="color:red;">default.css</span></strong>. Change <strong><span style="color:red;">default.css</span></strong> to color file name that you want.
+										<br>
+										Color file name includes:
+										<ul>
+											<li>
+												default.css
+											</li>
+											<li>
+												blue.css
+											</li>
+											<li>
+												corporate-blue.css
+											</li>
+											<li>
+												dark-cyan.css
+											</li>
+											<li>
+												dark-cyan2.css
+											</li>
+											<li>
+												dark-gray.css
+											</li>
+											<li>
+												dark-gray2.css
+											</li>
+											<li>
+												dark-purple.css
+											</li>
+											<li>
+												dark-salmon.css
+											</li>
+											<li>
+												dark-slate-gray.css
+											</li>
+											<li>
+												dodger-blue.css
+											</li>
+											<li>
+												golden-rod.css
+											</li>
+											<li>
+												green.css
+											</li>
+											<li>
+												hot-pink.css
+											</li>
+											<li>
+												indian-red.css
+											</li>
+											<li>
+												maroon.css
+											</li>
+											<li>
+												medium-violet-red.css
+											</li>
+											<li>
+												midnight-blue.css
+											</li>
+											<li>
+												muted-teal.css
+											</li>
+											<li>
+												orange.css
+											</li>
+											<li>
+												purple.css
+											</li>
+											<li>
+												red.css
+											</li>
+											<li>
+												soft-green.css
+											</li>
+											<li>
+												yellow.css
+											</li>
+										</ul>
+									</p>
+									<p>
+										Example: I want to use green color, so i made change it to <strong>css/colors/<span style="color:red;">green.css</span></strong>
+									</p>
+									<pre class="brush: js; ruler: true; first-line: 17; highlight:[18]">
+										&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" /&gt;
+										&lt;link rel="stylesheet" type="text/css" href="{{asset "css/colors/green.css"}}" /&gt;</pre>
+								</li>
+							</ol>		
+						</div>
+						<br/>						
+						<h3 id="social-media-icons-option">4.7 Social Media Icons</h3>
+						<p>
+							In this section you can change Social Network Icons on the Header, Banner, Personal Intro Screen and Footer
+						</p>
+						<p><strong><em>File: partials/misc/social-icons.hbs</em></strong></p>
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[4,5,6,7,8,12,13,14,15,16,20,21,22,23,24,27]">						
+							{{!Begin of Social Icon List}}
+							&lt;ul class="social"&gt;
+								{{!Begin Social item}}
+								&lt;li class="google"&gt;
+									&lt;a href="#" target="_blank" title="Google"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+										&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Social item}}
+
+								{{!Begin Social item}}
+								&lt;li class="twitter"&gt;
+									&lt;a href="#" target="_blank" title="Twitter"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+										&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Social item}}
+
+								{{!Begin Social item}}
+								&lt;li class="facebook"&gt;
+									&lt;a href="#" target="_blank" title="Facebook"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+										&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								{{!End Social item}}
+
+								{{!Add New Social item here}}
+							&lt;/ul&gt;
+							{{!End of Social Icon List}}</pre>
+						<p>
+							What you need is change href value to the social url, you can also copy new social icon in the list below and paste it to line 27
+						</p>				    
+						<p>
+							Here full list of social icons that the theme support:
+						</p>
+						<ul>
+							<li>
+								<p>
+									<strong>Facebook</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="facebook"&gt;
+										&lt;a href="#" target="_blank" title="Facebook"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-facebook"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>Twitter</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="twitter"&gt;
+										&lt;a href="#" target="_blank" title="Twitter"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-twitter"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>Google Plus</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="google"&gt;
+										&lt;a href="#" target="_blank" title="Google"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>LinkedIn</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="linkedin"&gt;
+										&lt;a href="#" target="_blank" title="linkedin"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>vkontakte</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="vkontakte"&gt;
+										&lt;a href="#" target="_blank" title="vkontakte"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-vk"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>xing</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="xing"&gt;
+										&lt;a href="#" target="_blank" title="xing"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-xing"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>skype</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="skype"&gt;
+										&lt;a href="#" target="_blank" title="skype"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-skype"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>yahoo</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="yahoo"&gt;
+										&lt;a href="#" target="_blank" title="yahoo"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-yahoo"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>flickr</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="flickr"&gt;
+										&lt;a href="#" target="_blank" title="flickr"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-flickr"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>instagram</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="instagram"&gt;
+										&lt;a href="#" target="_blank" title="instagram"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-instagram"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>behance</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="behance"&gt;
+										&lt;a href="#" target="_blank" title="behance"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-behance"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>dribbble</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="dribbble"&gt;
+										&lt;a href="#" target="_blank" title="dribbble"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>pinterest</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="pinterest"&gt;
+										&lt;a href="#" target="_blank" title="pinterest"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>deviantart</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="deviantart"&gt;
+										&lt;a href="#" target="_blank" title="deviantart"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-deviantart"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>youtube</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="youtube"&gt;
+										&lt;a href="#" target="_blank" title="youtube"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-youtube"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>vimeo</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="vimeo"&gt;
+										&lt;a href="#" target="_blank" title="vimeo"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-vimeo"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>soundcloud</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="soundcloud"&gt;
+										&lt;a href="#" target="_blank" title="soundcloud"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>spotify</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="spotify"&gt;
+										&lt;a href="#" target="_blank" title="spotify"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-spotify"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>wordpress</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="wordpress"&gt;
+										&lt;a href="#" target="_blank" title="wordpress"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-wordpress"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>tumblr</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="tumblr"&gt;
+										&lt;a href="#" target="_blank" title="tumblr"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>reddit</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="reddit"&gt;
+										&lt;a href="#" target="_blank" title="reddit"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-reddit"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>digg</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="digg"&gt;
+										&lt;a href="#" target="_blank" title="digg"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-digg"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>stumbleupon</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="stumbleupon"&gt;
+										&lt;a href="#" target="_blank" title="stumbleupon"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-stumbleupon"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>delicious</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="delicious"&gt;
+										&lt;a href="#" target="_blank" title="delicious"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-delicious"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>foursquare</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="foursquare"&gt;
+										&lt;a href="#" target="_blank" title="foursquare"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-foursquare"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>github</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="github"&gt;
+										&lt;a href="#" target="_blank" title="github"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-github"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>dropbox</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="dropbox"&gt;
+										&lt;a href="#" target="_blank" title="dropbox"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-dropbox"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>rss</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="rss"&gt;
+										&lt;a href="#" target="_blank" title="rss"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-rss"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;</pre>
+							</li>
+							<li>
+								<p>
+									<strong>email</strong>
+								</p>
+								<pre class="brush: js; ruler: true;">
+									&lt;li class="email"&gt;
+										&lt;a href="#" target="_blank" title="email"&gt; {{!Change href="#" to href="SOCIAL_URL"}}
+											&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt; {{!Change icon for social item here}}
+										&lt;/a&gt;
+									&lt;/li&gt;
+								</pre>
+							</li>
+						</ul>
+						<br/>						
+						<h3 id="typography-option">4.8 Typography</h3>
+						<p>
+							We are using the google web font, if you would like to change the font for the theme please follow the steps below.
+						</p>
+						<ol>
+							<li>
+								<p>
+									Open file <strong>default.hbs</strong>
+								</p>
+								<p>
+									On line 16 you will see it like: 
+								</p>
+								<pre class="brush: js; ruler: true; first-line: 15; highlight:[16]">
+									{{ghost_head}}
+									&lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:regular,italic,700%7CMontserrat:regular,700' rel='stylesheet' type='text/css'&gt; {{! Change google font here }}    
+									&lt;link rel="stylesheet" type="text/css" href="{{asset "css/style.min.css"}}" /&gt;</pre>
+								<p>
+									Replace line 16 to YOUR GOOGLE FONT LINK
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>Using LESS</strong>
+									<ol>
+										<li>
+											<p>Open file assets/less/variables.less</p>
+											<p>On line 10 and 11 you will see a code like:</p>
+											<pre class="brush: js; ruler: true; first-line: 9; highlight:[10,11]">
+											/* Typography */
+											@headings-font: 						'Montserrat','Helvetica Neue',sans-serif;
+											@body-font: 							'Open Sans','Helvetica Neue',sans-serif;</pre>
+											<p>
+												Paste font family to @headings-font and @body-font
+											</p>
+											<p>
+												Rebuild all assets file by command <strong>grunt</strong>.
+											</p>
+										</li>
+									</ol>
+								</p>
+								<p>
+									<strong>Using Standard CSS</strong>
+								</p>
+								<ol>
+									<li>
+										<p>
+											Open file assets/css/custom.css
+										</p>
+										<p>
+											Add a code like:
+										</p>
+										<pre class="brush: js; ruler: true; first-line: 1; highlight:[2,5]">
+											body {
+												font-family: BODY_FONT_FAMILY;												
+											}											
+											h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+												font-family: HEADING_FONT_FAMILY;
+											}
+										</pre>
+										<p>
+											With BODY_FONT_FAMILY and HEADING_FONT_FAMILY from google font.
+										</p>
+									</li>
+								</ol>								
+							</li>
+						</ol>	
+						<br/>
+						<p>
+							More info about google font:
+						</p>
+						<p>
+							<img class="img-responsive" src="custom-theme/assets/img/google-font.png" alt=""/>
+						</p>
+						<br/>						
+						<h3 id="comment-option">4.9 Comment</h3>
+						<p>
+							By Default, this theme supports comments supplied by Disqus (http://disqus.com). For assistance in setting up your own Disqus account and customizing it for your needs, please see the Disqus QuickStart Guide: <a href="http://help.disqus.com/customer/portal/articles/466182-quick-start-guide">http://help.disqus.com/customer/portal/articles/466182-quick-start-guide</a>
+						</p>
+						<p>					
+							Change content in the files below to apply Disqus Comment 
+						</p>
+						<p><strong><em>Open file: partials/misc/comment.hbs</em></strong> you will see code like:</p>	
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[5]">
+							&lt;div itemprop="comment" class="comment-box"&gt;					
+								&lt;div id="disqus_thread"&gt;&lt;/div&gt;
+								&lt;script type="text/javascript"&gt;
+								    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+								    var disqus_shortname = 'example'; // required: replace example with your disqus shortname
+
+								    /* * * DON'T EDIT BELOW THIS LINE * * */
+								    // Disqus Comments Count JS
+								    (function () {
+								        var s = document.createElement('script'); s.async = true;
+								        s.type = 'text/javascript';
+								        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+								        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+								    }());
+
+								    // Disqus Comments Form JS
+								    (function() {
+								        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								    })();
+								&lt;/script&gt;
+								&lt;noscript&gt;Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+							&lt;/div&gt;</pre>
+						<p>On line 5 replace <strong>example</strong> with your disqus shortname</p>
+					</div>
+					<br/>
+					<br/>
+					<h2 id="writing-posts">5. Writing Posts</h2>
+					<p>
+						<strong>Unmistakable</strong> supports 4 custom post formats: Image, Video, Audio and Plain Text
+					</p>
+					<div style="padding-left:30px;">
+						<h3 id="image-post">5.1 Image Post</h3>					
+						<p>
+							This is ghost built-in post format, just write your post and upload <strong>Post Cover Image</strong> in <strong>Post Settings Panel</strong>
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/image-post.png" alt="Image Post"/>
+						</p>
+						<hr/>
+						<h3 id="video-post">5.2 Video Post</h3>					
+						<p>
+							This is Unmistakable custom post format, allows to set your YouTube or Vimeo video as post cover. Just write your post and put video url in the top of post content.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/video-post.png" alt="Video Post"/>
+						</p>
+						<hr/>
+						<h3 id="audio-post">5.3 Audio Post</h3>					
+						<p>
+							This is Unmistakable custom post format, allows to set your SoundCloud audio as post cover. Just write your post and put soundcloud url in the top of post content.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/audio-post.png" alt="Audio Post"/>
+						</p>
+						<hr/>
+						<h3 id="plain-text-post">5.4 Plain Text Post</h3>					
+						<p>
+							This is ghost built-in post format. Like Image Post, just write your post but not upload Post Cover Image.
+						</p>
+					</div>
+					<br/>
+					<br/>
+					<h2 id="pages">6. Pages</h2>
+					<p>
+						<strong>Unmistakable</strong> has a built-in custom page template called page-contact.hbs, it can display your contact page with Google Map cover.
+					</p>
+					<p>
+						To use this page template you need create a static page and change <strong>Post URL</strong> to <strong>contact</strong>.
+					</p>
+					<div style="padding-left:30px;">
+						<h3>6.1 Config Google Map for Contact Page</h3>					
+						<p>
+							Open file <strong><em>page-contact.hbs</em></strong>, at line 10-11
+						</p>
+						<pre class="brush: js; ruler: true; first-line: 10; highlight:[10,11]">
+							data-latitude="10.839776" {{!Change Your map latitude here}}
+							data-longitude="106.647159" {{!Change Your map longitude here}}
+						</pre>
+					</div>
+					<br/>
+					<br/>
+					<h2 id="dynamic-post-page-layout">7. Dynamic Post/Page Layout</h2>
+					<p>
+						<strong>Unmistakable</strong> supports 4 dynamic Post/Page Layouts: 3 columns (Both Sidebar), 2 columns left sidebar, 2 columns right sidebar and one column (Full Width). You can easy to change Post/Page layout by use <strong>System Tag</strong>
+					</p>
+					<div style="padding-left:30px;">
+						<h3 id="both-sidebars-layout">7.1 Both Sidebars Layout</h3>					
+						<p>
+							To change your post/page to 3 columns (Both Sidebar), just add system tag called: <strong>_both_sidebar</strong> in Post Tag panel.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/both-sidebar-layout.png" alt="Both Sidebar Layout"/>
+						</p>
+						<hr/>
+						<h3 id="left-sidebar-layout">7.2 Left Sidebar Layout</h3>					
+						<p>
+							To change your post/page to 2 columns  left sidebar, just add system tag called: <strong>_left_sidebar</strong> in Post Tag panel.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/left-sidebar-layout.png" alt="Left Sidebar Layout"/>
+						</p>
+						<hr/>
+						<h3 id="right-sidebar-layout">7.3 Right Sidebar Layout</h3>					
+						<p>
+							To change your post/page to 2 columns right sidebar, just add system tag called: <strong>_right_sidebar</strong> in Post Tag panel.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/right-sidebar-layout.png" alt="Right Sidebar Layout"/>
+						</p>
+						<hr/>
+						<h3 id="full-width-layout">7.4 Full Width Layout</h3>					
+						<p>
+							To change your post/page to one column (Full Width), just add system tag called: <strong>_full_width</strong> in Post Tag panel.
+						</p>
+						<p>
+							<img class="img-responsive"  src="custom-theme/assets/img/full-width-layout.png" alt="Full Width Layout"/>
+						</p>
+						<hr/>
+					</div>
+					<br/>
+					<br/>										
+					<h2 id="update">8. Update</h2>
+					<div class="padding-left:50px;">
+						<p><strong>If you need any extra or feature just send us a message <a href="http://themeforest.net/user/sunflowertheme"  target="_blank">here</a> and we will include it in the next update.</strong></p>
+					</div>
+					<br/>
+					<br/>	
+					<h2 id="credits">9. Credits</h2>
+					<div style="padding-left:30px;">						
+						<h3 id="javascript">9.1 Javascript</h3>
+						<p><strong>Unmistakable</strong> uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+						<ul>
+							<li>
+								<a href="http://getbootstrap.com/" target="_blank">Bootstrap Framework</a>
+							</li>
+							<li>
+								<a href="https://github.com/ReactiveRaven/jqBootstrapValidation" target="_blank">
+									jQuery Bootstrap Validation
+								</a>
+							</li>					
+							<li>
+								<a href="http://fitvidsjs.com/" target="_blank">
+									FitVids
+								</a>
+							</li>	
+							<li>
+								<a href="http://desandro.github.io/imagesloaded/" target="_blank">
+									imagesLoaded
+								</a>
+							</li>					
+							<li>
+								<a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">
+									Magnific Popup
+								</a>
+							</li>
+							<li>
+								<a href="http://prismjs.com/" target="_blank">
+									Prism
+								</a>
+							</li>
+							<li>
+								<a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" target="_blank">
+									jQuery Flickr Plugin
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/galambalazs/smoothscroll" target="_blank">
+									SmoothScroll v1.2.1
+								</a>
+							</li>
+							<li>
+								<a href="http://mths.be/placeholder" target="_blank">
+									jQuery Placeholder
+								</a>
+							</li>
+							<li>
+								<a href="http://github.hubspot.com/pace/" target="_blank">
+									Pace
+								</a>
+							</li>	
+							<li>
+								<a href="https://github.com/Prinzhorn/skrollr" target="_blank">
+									skrollr
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/tylergaw/jribbble" target="_blank">
+									jQuery Dribbble Plugin
+								</a>
+							</li>
+							<li>
+								<a href="http://adrianquevedo.com/" target="_blank">
+									jQuery Spectragram
+								</a>
+							</li>
+						</ul>
+						<br/>
+						<br/>
+						<h3 id="images">9.2 Images</h3>
+						<p>
+							Images showed on preview files are from <a href="http://pixabay.com" target="_blank">pixabay.com</a> and <a href="http://subtlepatterns.com" target="_blank">subtlepatterns.com</a>. Being designed with multipurpose attitude in mind, we showed some images on our preview files so you can have an idea what can be accomplished. Not a single image file is included with the download, they were just for demo purposes due to copyright.
+						</p>
+						<br/>
+						<br/>
+						<h3 id="fonts">9.3 Fonts</h3>
+						<ul>
+							<li>
+								<strong>Google Fonts</strong> - <a href="http://www.google.com/webfonts"  target="_blank">http://www.google.com/webfonts</a>
+							</li>
+							<li>
+								<strong>Font Awesome</strong> - <a href="http://fortawesome.github.com/Font-Awesome/"  target="_blank">http://fortawesome.github.com/Font-Awesome/</a>
+							</li>
+						</ul>
+						<br />
+					</div>
+					<p>
+						<strong>			    	
+							Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. Please contact 	me via email or social media. I'll do my best to assist!
+						</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container-fluid">Copyright &copy; 2015 by Sunflower Theme. All rights reserved.</div>
+	</footer>	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+    <script type="text/javascript" src="custom-theme/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="custom-theme/assets/js/shCore.js"></script>
+    <script type="text/javascript" src="custom-theme/assets/js/shBrushJScript.js"></script>
+    <script type="text/javascript">
+    	SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="custom-theme/assets/js/main.js"></script>
+</body>
+</html>

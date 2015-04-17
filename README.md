@@ -1,3 +1,20 @@
+# Unmistakable Website
+
+Hello, We're A Traveling Family. We want to have the adventure of a lifetime. Follow an idea to the edges. And keep going. Forgo tradition. Trust OUR instincts. Be who we are. And let our natural creativity & curiosity be our guide.
+Want to know more?
+
+> http://unmistakable.us
+ 
+ 
+## Overview
+
+In every traveling family's life, there is a thorn. Managing web presence is one of ours. So we're trying a new approach, having our own website not built in a CMS,
+to showcase some of our creative work and story telling. Thanks to [yaboi](https://github.com/yaboi/Passion-Driven-Website) for the boost and initial codebase...and for being [Ya Boi](http://beardandfedora.com).
+
+## Credits
+Thank you to the [#OpenSourceEverything](https://twitter.com/hashtag/opensourceeverything) community. Without you, this site wouldn't be possible. Here are the badasses that helped to make this site what it is: [Yaboi](https://tylergoelz.com/), AngularJS, Express, NodeJS, HTML, Sass, Compass, jQuery, Codio, Bower, Grunt, Yeoman, Heroku, Beard and Fedora, Git, Github, NewRelic, Bootstrap, Polymer, DesignModo.
+
+
 <a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/6622822/c4c639fe-c8e7-11e4-9e64-5bec06c8b4c3.png" alt="Ghost" /></a>
 <a href="https://travis-ci.org/TryGhost/Ghost"><img align="right" src="https://travis-ci.org/TryGhost/Ghost.svg?branch=master" alt="Build status" /></a>
 

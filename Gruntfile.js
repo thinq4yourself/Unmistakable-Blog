@@ -68,6 +68,10 @@ var _              = require('lodash'),
             watch: {
                 livereload: {
                     files: [
+                        'content/themes/unmistakable/assets/css/*.css',
+                        'content/themes/unmistakable/assets/js/*.js',
+                        'content/themes/unmistakable/partials/*.hbs',
+                        'content/themes/unmistakable/*.hbs',
                         'content/themes/casper/assets/css/*.css',
                         'content/themes/casper/assets/js/*.js',
                         'core/client/dist/*.js',

@@ -1,5 +1,6 @@
 <section class="login-box js-login-box fade-in">
-    <form id="login" class="login-form" method="post" novalidate="novalidate" {{action 'validateAndAuthenticate' on='submit'}}>
+    <img src="{{gh-path 'admin' '/img/trip-bag.svg'}}" class="img-responsive">
+	<form id="login" class="login-form" method="post" novalidate="novalidate" {{action 'validateAndAuthenticate' on='submit'}}>
         <div class="email-wrap">
             <span class="input-icon icon-mail">
                 {{gh-trim-focus-input class="email" type="email" placeholder="Email Address" name="identification" autocapitalize="off" autocorrect="off" value=model.identification}}

@@ -1,0 +1,20 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+        "Start Server": "npm start",
+        "Build": "grunt prod",
+        "Run Tests": "npm test"
+  },
+
+// Preview button configuration
+  "preview": {
+        "Open Ghost": "http://{{domain}}:3000/",
+        "Test Ghost": "http://{{domain}}:3369/",
+        "Open Ghost SSL": "https://{{domain}}:9500/",
+        "Theme Docs": "https://{{domain}}/{{index}}/custom-theme",
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}"
+  }
+}
