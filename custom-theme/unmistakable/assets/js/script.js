@@ -1550,7 +1550,10 @@ var sfApp={
     			items = $(element).data('max-items');
     		}
     		var count = 0;
-	    	var htmlStr = '<ul>';
+    		if(! $(element).data('show-count') ){
+    			$(".count").css( "display", "none" );
+    		}
+	    	var htmlStr = '<ul class="sub-menu">';
 	    	$.each( sfApp.tags_list, function( index, tag ) {
 	    		var tagLink = tag.tagName.toLowerCase().replace(/ /g, '-');
 	    		htmlStr += '<li><a href="' + rootUrl + '/tag/' + tagLink + '"><span class="name">' + tag.tagName + '</span><span class="count">' + tag.total + '</span></a></li>';
@@ -1560,7 +1563,8 @@ var sfApp={
 			  	}
 			});				
 	    	htmlStr += '</ul>';
-			$(element).html(htmlStr);
+			$(element).append(htmlStr);
+			$(".sf-loading").css( "display", "none" );
 		}
     },
     paginationEvents:function(){

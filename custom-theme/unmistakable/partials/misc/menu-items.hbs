@@ -5,25 +5,9 @@
 	</a>
 </li>
 {{!End Menu Item}}
-<li class="has-children"> <!-- Add class="has-children" for multi level menu.-->
-	<a href="#">Travel Blog</a>
-	<!-- Begin level 3 menu-->
-	<ul class="sub-menu">
-		<li>
-			<a href="{{@blog.url}}/which-is-the-best-bordeaux-or-burgundy/">Featured Post</a>
-		</li>
-		<li>
-			<a href="{{@blog.url}}/wireless-speaker-or-art-piece/">Image Format</a>
-		</li>
-		<li>
-			<a href="{{@blog.url}}/audi-sends-self-driving-a7-sportback-auto/">Video Format</a>
-		</li>
-		<li>
-			<a href="{{@blog.url}}/the-92m-x-ballet-brings-relaxed/">Audio Format</a>
-		</li>
-	</ul>
-	<!-- End level 3 menu-->
-</li>
+{{!Begin Menu Item}}
+		{{>misc/menu-tags style="stack" max_items="15" show_count="false"}}
+{{!End Menu Item}}
 {{!Begin Menu Item}}
 <li class="has-children"> <!-- Add class="has-children" for multi level menu.-->
 	<a href="#"> <!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/resume/-->
@@ -49,6 +33,25 @@
 				</li>
 			</ul>
 			<!-- End level 3 menu-->
+		</li>
+		<li class="has-children"> <!-- Add class="has-children" for multi level menu.-->
+			<a href="#">Post Formats</a>
+			<!-- Begin level 3 menu-->
+			<ul class="sub-menu">
+				<li>
+					<a href="{{@blog.url}}/which-is-the-best-bordeaux-or-burgundy/">Featured Post</a>
+				</li>
+				<li>
+					<a href="{{@blog.url}}/wireless-speaker-or-art-piece/">Image Format</a>
+				</li>
+				<li>
+					<a href="{{@blog.url}}/audi-sends-self-driving-a7-sportback-auto/">Video Format</a>
+				</li>
+				<li>
+					<a href="{{@blog.url}}/the-92m-x-ballet-brings-relaxed/">Audio Format</a>
+				</li>
+			</ul>
+	<!-- End level 3 menu-->
 		</li>
 		<li>
 			<a href="{{@blog.url}}/html-markup/">Html Markup</a>

@@ -1,7 +1,7 @@
 {
 	"/home/codio/workspace/custom-theme/unmistakable/assets/js/main.min.js": {
-		"hash": "1ed3f117",
-		"date": "20150418014722",
+		"hash": "73f0572",
+		"date": "20150418152612",
 		"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/js/main.min.js",
 		"files": [
 			{
@@ -96,14 +96,14 @@
 			},
 			{
 				"file": "/home/codio/workspace/custom-theme/unmistakable/assets/js/script.js",
-				"hash": "1f35498d",
+				"hash": "89fd80c",
 				"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/js/script.js"
 			}
 		]
 	},
 	"/home/codio/workspace/custom-theme/unmistakable/assets/css/style.min.css": {
-		"hash": "e02938f",
-		"date": "20150418014724",
+		"hash": "3680767e",
+		"date": "20150418152615",
 		"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/css/style.min.css",
 		"files": [
 			{
@@ -127,13 +127,18 @@
 				"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/css/magnific-popup.css"
 			},
 			{
+				"file": "/home/codio/workspace/custom-theme/unmistakable/assets/css/paper.min.css",
+				"hash": "6825cc3f",
+				"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/css/paper.min.css"
+			},
+			{
 				"file": "/home/codio/workspace/custom-theme/unmistakable/assets/css/prism.css",
 				"hash": "6d97c815",
 				"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/css/prism.css"
 			},
 			{
 				"file": "/home/codio/workspace/custom-theme/unmistakable/assets/css/style.css",
-				"hash": "b91724e",
+				"hash": "329f03bd",
 				"versioned": "/home/codio/workspace/custom-theme/unmistakable/assets/css/style.css"
 			}
 		]
