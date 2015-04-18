@@ -67,3 +67,8 @@ config.js
 
 # Coverage reports
 coverage.html
+
+# Custom Theme
+/custom-theme/style-2
+/custom-theme/assets
+/custom-theme/index.html

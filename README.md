@@ -5,12 +5,6 @@ Want to know more?
 
 > http://unmistakable.us
  
- 
-## Overview
-
-In every traveling family's life, there is a thorn. Managing web presence is one of ours. So we're trying a new approach, having our own website not built in a CMS,
-to showcase some of our creative work and story telling. Thanks to [yaboi](https://github.com/yaboi/Passion-Driven-Website) for the boost and initial codebase...and for being [Ya Boi](http://beardandfedora.com).
-
 ## Credits
 Thank you to the [#OpenSourceEverything](https://twitter.com/hashtag/opensourceeverything) community. Without you, this site wouldn't be possible. Here are the badasses that helped to make this site what it is: [Yaboi](https://tylergoelz.com/), AngularJS, Express, NodeJS, HTML, Sass, Compass, jQuery, Codio, Bower, Grunt, Yeoman, Heroku, Beard and Fedora, Git, Github, NewRelic, Bootstrap, Polymer, DesignModo.
 
