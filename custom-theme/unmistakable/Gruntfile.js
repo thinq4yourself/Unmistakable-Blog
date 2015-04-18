@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         },
         copy: {
             theme: {
-                src: ['**'],
+                src: ['**', '!**/node_modules/**'],
                 dest: '../../content/themes/unmistakable/',
                 expand: true,
                 nonull: true,
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
         copyto: {
             theme: {
                 files: [{
-                    src: ['**'],
+                    src: ['**', '!**/node_modules/**'],
                     dest: '../../content/themes/unmistakable/',
                     expand: true,
                     nonull: true,
@@ -90,5 +90,6 @@ module.exports = function(grunt) {
         }
     });
     grunt.registerTask('default', ['clean:main', 'frontend-js', 'less', 'frontend-css']);
-    grunt.registerTask('deploy', ['clean:built', 'copyto:theme']);
+    grunt.registerTask('refresh', ['clean:built']);
+    grunt.registerTask('deploy', ['copyto:theme']);
 };

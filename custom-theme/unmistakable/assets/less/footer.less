@@ -9,6 +9,9 @@
     body[data-footer-color="dark"] &{	
     	border-top-color: @footer-widget-content-color-dark;
     }
+    body[data-footer-color="main"] &{	
+    	border-top-color: @footer-widget-content-color-main;
+    }
 	.widget-area{
 		margin-top: 4px;
 		padding-top: floor( @spacing * 1.5 );
@@ -16,6 +19,9 @@
 		background-color: @footer-background;		
 		body[data-footer-color="dark"] &{									
 			background-color: @footer-background-dark;				
+		}
+		body[data-footer-color="main"] &{									
+			background-color: @footer-background-main;				
 		}
 		.widget-area-wrap{			
 			width: 100%;
@@ -31,6 +37,13 @@
 						border-color: @light-color;
 					}		
 				}   	
+	     		body[data-footer-color="main"] &{
+	     			color: @footer-widget-content-color-main;
+					background-color: @footer-widget-background-main;
+					&:before{
+						border-color: @light-color;
+					}		
+				}   	
 	        	&.search-widget{
 	        		margin-bottom: ( @spacing - 10 );
 	        	}
@@ -42,6 +55,9 @@
 	        		body[data-footer-color="dark"] &{
 	        			color: @footer-widget-title-color-dark;	        		
 	        		}
+	        		body[data-footer-color="main"] &{
+	        			color: @footer-widget-title-color-main;	        		
+	        		}
 	        	}	
 	        	.recent-posts{
 					ul{
@@ -52,17 +68,26 @@
 					        	body[data-footer-color="dark"] &{
 					        		color: @footer-widget-content-color-dark;	
 					        	}				        	
+					        	body[data-footer-color="main"] &{
+					        		color: @footer-widget-content-color-main;	
+					        	}				        	
 					        }
 					        a {			
 					        	color: @footer-widget-content-color;
 					        	body[data-footer-color="dark"] &{
 					        		color: @footer-widget-content-color-dark;
 					        	}
+					        	body[data-footer-color="main"] &{
+					        		color: @footer-widget-content-color-main;
+					        	}
 					        }
 					        .post-date {		
 					        	color: @footer-widget-content-color;
 					        	body[data-footer-color="dark"] &{
 					        		color: @footer-widget-content-color-dark;
+					        	}
+					        	body[data-footer-color="main"] &{
+					        		color: @footer-widget-content-color-main;
 					        	}
 					        }
 					        &:hover{
@@ -84,6 +109,9 @@
 				        				color: @footer-widget-content-color;
 				        				body[data-footer-color="dark"] &{
 							        		color: @footer-widget-content-color-dark;
+							        	}
+				        				body[data-footer-color="main"] &{
+							        		color: @footer-widget-content-color-main;
 							        	}
 				        			}			        						        			
 				        			&:hover{
@@ -107,6 +135,9 @@
 									body[data-footer-color="dark"] &{
 										color: @footer-widget-content-color-dark;
 									}			
+									body[data-footer-color="main"] &{
+										color: @footer-widget-content-color-main;
+									}			
 									&:hover{
 										color: @main-color;
 										background-color: @light-color;
@@ -124,6 +155,9 @@
 			            	body[data-footer-color="dark"] &{
 								color: @footer-widget-content-color-dark;
 							}			
+			            	body[data-footer-color="main"] &{
+								color: @footer-widget-content-color-main;
+							}			
 			            }
 			            &.has-children{
 			                & > a{
@@ -131,6 +165,9 @@
 			                    	color: @footer-widget-content-color; 
 			                    	body[data-footer-color="dark"] &{
 										color: @footer-widget-content-color-dark;
+									}			
+			                    	body[data-footer-color="main"] &{
+										color: @footer-widget-content-color-main;
 									}			
 			                    }
 			                }

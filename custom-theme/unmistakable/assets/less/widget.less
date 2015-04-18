@@ -45,10 +45,10 @@
 			padding: 0;
 			li {
 		        position: relative;		        
-		        padding-bottom: 20px;
+		        /* padding-bottom: 20px; */
+				border-bottom: solid 1px @gray-light-color;
 		        margin-bottom: 10px;
 		        list-style: none;
-		        border-bottom: solid 1px @gray-color;	
 		        body[data-border-pattern="dashed"] &{
 		            border-bottom-style: dashed;
 		        } 	        
@@ -70,6 +70,14 @@
 		            	margin-bottom: 10px;
 		            	width: 100%;
 		            }
+					/* 
+					&:before {
+						font-family: FontAwesome;
+						color: @gray-light-color;
+						content: '\f054';
+						padding-right: 10px;
+					}
+					*/
 		        }
 		        .post-date {
 		            display: block;            
@@ -195,7 +203,7 @@
 						display: block;
 						padding: 0 0 10px 0;					
 						margin: 0 0 10px 0;					
-						border-bottom: solid 1px @gray-color;
+						border-bottom: solid 1px @gray-light-color;
 						body[data-border-pattern="dashed"] &{
 				            border-bottom-style: dashed;
 				        }															

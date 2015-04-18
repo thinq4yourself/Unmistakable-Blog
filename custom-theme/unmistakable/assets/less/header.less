@@ -236,19 +236,19 @@
             vertical-align: middle;
             img {
                 max-height: ( @spacing + 20 );
-					.default {
-						display:inline-block;
-						-webkit-transition: opacity 1.0s ease-in;
-       					-moz-transition: opacity 1.0s ease-in;
-         				-o-transition: opacity 1.0s ease-in;
-                        opacity: 1;
-					}
-					.alt {
+					&.default {
 						display:none;
-						-webkit-transition: opacity 1.0s ease-in;
-       					-moz-transition: opacity 1.0s ease-in;
-         				-o-transition: opacity 1.0s ease-in;
+						-webkit-transition: opacity 2.0s ease-out;
+       					-moz-transition: opacity 2.0s ease-out;
+         				-o-transition: opacity 2.0s ease-out;
                         opacity: 0;
+					}
+					&.alt {
+						display:inline-block;
+						-webkit-transition: opacity 2.0s ease-in;
+       					-moz-transition: opacity 2.0s ease-in;
+         				-o-transition: opacity 2.0s ease-in;
+                        opacity: 1;
 					}
             }
             &.text {
@@ -284,19 +284,19 @@
         .logo-container {
             .logo {
             	img {
-					.default {
+					&.default {
 						display:inline-block;
-						-webkit-transition: opacity 1.0s ease-in;
-       					-moz-transition: opacity 1.0s ease-in;
-         				-o-transition: opacity 1.0s ease-in;
-                        opacity: 0;
-					}
-					.alt {
-						display:none;
-						-webkit-transition: opacity 1.0s ease-in;
-       					-moz-transition: opacity 1.0s ease-in;
-         				-o-transition: opacity 1.0s ease-in;
+						-webkit-transition: opacity 2.0s ease-in;
+       					-moz-transition: opacity 2.0s ease-in;
+         				-o-transition: opacity 2.0s ease-in;
                         opacity: 1;
+					}
+					&.alt {
+						display:none;
+						-webkit-transition: opacity 2.0s ease-out;
+       					-moz-transition: opacity 2.0s ease-out;
+         				-o-transition: opacity 2.0s ease-out;
+                        opacity: 0;
 					}
             	}
 				&.text {                    
@@ -363,9 +363,29 @@
     }
     body[data-header-color="transparent"].post-template &{        
         position: relative;
-        background-color: @light-color;        
-        
-    }    
+        background-color: @light-color;                
+        .logo-container {
+            .logo {
+            	img {
+					&.default {
+						display:inline-block;
+						-webkit-transition: opacity 2.0s ease-in;
+       					-moz-transition: opacity 2.0s ease-in;
+         				-o-transition: opacity 2.0s ease-in;
+                        opacity: 1;
+					}
+					&.alt {
+						display:none;
+						-webkit-transition: opacity 2.0s ease-out;
+       					-moz-transition: opacity 2.0s ease-out;
+         				-o-transition: opacity 2.0s ease-out;
+                        opacity: 0;
+					}
+            	}
+			}
+		}
+
+	}    
     body[data-header-color="transparent"][data-header-sticky="true"].post-template &{
         position: fixed;
     }    
