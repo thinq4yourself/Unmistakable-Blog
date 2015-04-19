@@ -6,8 +6,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-copy-to');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+	var pkg = grunt.file.readJSON('package.json');
     grunt.initConfig({
-        frontend: {
+        pkg: grunt.file.readJSON('package.json'),
+		frontend: {
             force: false,
             webroot: './build/assets/'
         },
@@ -82,14 +85,24 @@ module.exports = function(grunt) {
                     processContent: function(content, path) {
                         // do something with content or return false to abort copy 
                         return content;
-                    }, 
-					// array of ignored paths, can be specific files or a glob
+                    },
+                    // array of ignored paths, can be specific files or a glob
                     ignore: ['node_modules', 'nodule_modules{,/**/*}']
                 }
             }
-        }
+        },
+        compress: {
+            release: {
+                options: {
+                    archive: '../release/unmistakable-<%= pkg.version %>.zip'
+                },
+                expand: true,
+                src: ['../../content/themes/unmistakable/**']
+            }
+        },
     });
     grunt.registerTask('default', ['clean:main', 'frontend-js', 'less', 'frontend-css']);
     grunt.registerTask('refresh', ['clean:built']);
     grunt.registerTask('deploy', ['copyto:theme']);
+    grunt.registerTask('release', ['compress:release']);
 };

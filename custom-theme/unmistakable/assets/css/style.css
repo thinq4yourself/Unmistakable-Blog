@@ -3197,12 +3197,14 @@ body[data-border-pattern="dashed"] .widget .recent-posts ul li {
   line-height: 26px;
   margin-bottom: 10px;
   color: #20252b;
-  /* 
+  /*
 					&:before {
 						font-family: FontAwesome;
 						color: @gray-light-color;
 						content: '\f054';
-						padding-right: 10px;
+						padding-right: 8px;
+						font-weight: 300;
+						
 					}
 					*/
 }
